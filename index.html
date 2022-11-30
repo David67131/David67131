@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DaWei Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            html * {
+                font-family: Arial !important;
+            }
+
+            .profile_header {
+                text-align: center;
+                background-color: #6f00ed;
+                color: white;
+                padding-top: 4vh;
+                padding-bottom: 4vh;
+                height: 100%;
+                background-image: url("YUZHOU2.jpeg");
+            }
+
+            h2 {
+                color: rgb(156, 0, 140);
+                margin-bottom: 0pt;
+            }
+            p {
+                margin-top: 0pt;
+                font-size: small;
+        }
+            body {
+                background-image: linear-gradient(to bottom right, #fde3ff , rgb(255, 204, 204));
+            }
+            .content-cell {
+            width: 50%;
+            padding-left: 1rem;
+            padding-left: 1rem;
+            background-color: white;
+        }
+        </style>
+    </head>
+    
+    <body>
+      
+        <table style="width: 100%; height: 80%">
+            <tbody>
+                <tr>
+                <td style = "width: 50%">
+                    <div class="profile_header">
+                        <img src="Cute Dog.jpeg" 
+                        alt="David Cute Dog" 
+                        style="width: 100px; border-radius: 50%;" />
+                        <br />
+                        <h1 style="font-size:medium;">
+                            <span id="myName">Da Wei Song</span>
+                        </h1>
+                        22 years old. Chinese Han nationality. Beijing native<br />
+                    </div>
+                </td>
+                <td class="content-cell">
+                    <h2>College Student</h2>
+                    <p>
+                        Now studying at ABAC University in Bangkok.
+                    </p>
+                
+                    <h2>Senior Game Enthusiasts</h2>
+                    <p>
+                        I've played video games since I was 3 years old.
+                    </p>
+                    <h2>Collector's hobby</h2>
+                    <p>
+                        I like collecting all kinds of things I like, such as the limited version of the game.
+                    </p>
+                    <h2>Anime lovers</h2>
+                    <p>
+                        I like anime and comics so much.
+                    </p>
+                </td>
+                </tr>
+            </tbody>
+        </table>
+    <button onclick="changeName()">Change Name</button>
+
+    <script>
+       
+        var nameAsDavid = false
+
+        function changeName() {
+            var span = document.getElementById("myName");
+            if (nameAsDavid) {
+                span.innerHTML = "Da Wei Song"    
+            } else {
+                span.innerHTML = "David"
+            }
+            nameAsDavid != nameAsDavid
+            console.log("Button is clicked",nameAsDavid)
+        }
+    </script>
+    </body>
+    
+    </html>
+    
