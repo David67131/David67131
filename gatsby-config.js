@@ -8,5 +8,12 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
+  plugins: [
+       {
+      resolve: `gatsby-transformer-json`,
+      options: {
+        typeName: `Json`,
+      },
+    },
+  ],
 }
